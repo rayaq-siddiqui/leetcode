@@ -1,0 +1,7 @@
+Important Data Structures
+
+1. HashTables
+2. StringBuilder 
+3. ArrayList/resizeable list
+
+
