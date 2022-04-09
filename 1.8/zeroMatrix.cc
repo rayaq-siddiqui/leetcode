@@ -30,7 +30,7 @@ void printMatrix(vector<vector<int>> mat) {
 // using the first value in each row or column to represent
 // the rest of the row and column. This has space complexity of O(1).
 // time complexity of O(MN), which is the fastest it can be for time and
-// space combined
+// space combined.
 vector<vector<int>> zeroMatrix(vector<vector<int>> mat) {
     // special case to be used later
     bool specialCase = mat[0][0] == 0, firstRow = false, firstCol = false;
