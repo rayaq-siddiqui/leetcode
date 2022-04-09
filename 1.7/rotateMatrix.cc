@@ -48,7 +48,7 @@ void printMatrix(vector<vector<int>> mat) {
     }
 }
 
-/* textbook answer
+/* textbook implementation
  * essentially we are going to do this in theory
  * 
  * for i = 0 in n
