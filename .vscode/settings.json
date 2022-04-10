@@ -5,6 +5,7 @@
         "__hash_table": "cpp",
         "unordered_map": "cpp",
         "__bit_reference": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "random": "cpp"
     }
 }
