@@ -9,9 +9,10 @@ struct Node {
 
 void printLL(Node *ptr) {
     while (ptr) {
-        cout << ptr->val << endl;
+        cout << ptr->val << " ";
         ptr = ptr->next;
     }
+    cout << endl;
 }
 
 void appendToTail(Node *ptr, int val) {
