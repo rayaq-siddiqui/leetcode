@@ -34,9 +34,8 @@ void printLL(Node *ptr) {
 Node* sumList(Node *a, Node *b, int carry=0) {
     int val, c;
     if (a && b) val = a->val + b->val;
-    else if (a && !b) val = a->val;
-    else if (!a && b) val = b->val;
-    else if (!a && !b && carry) val = 0;
+    else if (a || b) val = a ? a->val : b->val;
+    else if (carry) val = 0;
     else return nullptr;
 
     val += carry;
@@ -45,7 +44,7 @@ Node* sumList(Node *a, Node *b, int carry=0) {
 
     Node *curr = new Node();
     curr->val = val;
-    curr->next = sumList(a && a->next ? a->next : nullptr, b && b->next ? b->next : nullptr, c);
+    curr->next = sumList(a ? a->next : nullptr, b ? b->next : nullptr, c);
     return curr;
 }
 
@@ -105,6 +104,6 @@ int main() {
     printLL(headD);
     Node* sum2 = sumList(headC, headD);
     printLL(sum2);
+
     return 0;
 }
-
