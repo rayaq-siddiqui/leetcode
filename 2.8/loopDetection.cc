@@ -41,7 +41,7 @@ bool isLoop(Node* head) {
 }
 
 Node* loopDetection(Node* head) {
-    if (!isLoop(head)) return nullptr;
+    // if (!isLoop(head)) return nullptr;
     unordered_set<Node*> s;
 
     Node* n = head;
